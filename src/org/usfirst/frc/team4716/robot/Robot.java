@@ -8,6 +8,7 @@ import edu.wpi.first.wpilibj.livewindow.LiveWindow;
 
 import org.usfirst.frc.team4716.robot.subsystems.ACSDriveTrain;
 import org.usfirst.frc.team4716.robot.subsystems.LEDStrip;
+import org.usfirst.frc.team4716.robot.utils.*;
 import org.usfirst.frc.team4716.robot.subsystems.ACSVisionSystem;
 
 /**
@@ -24,7 +25,10 @@ public class Robot extends IterativeRobot {
 	public static final LEDStrip led = new LEDStrip();
 	public static final ACSVisionSystem vision = new ACSVisionSystem();
 	public static OI oi;
-
+	
+	//public static String serverAddr = "10.47.16.6";
+	//public static int port = 3001;
+	
     Command autonomousCommand;
 
     /**

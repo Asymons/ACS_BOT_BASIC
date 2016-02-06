@@ -6,7 +6,7 @@ import org.usfirst.frc.team4716.robot.commands.drivetrain.ACSJoystickDrive;
 import edu.wpi.first.wpilibj.DoubleSolenoid;
 import edu.wpi.first.wpilibj.DoubleSolenoid.Value;
 import edu.wpi.first.wpilibj.Encoder;
-import edu.wpi.first.wpilibj.Gyro;
+import edu.wpi.first.wpilibj.AnalogGyro;
 import edu.wpi.first.wpilibj.Talon;
 import edu.wpi.first.wpilibj.command.Subsystem;
 import edu.wpi.first.wpilibj.smartdashboard.SmartDashboard;
@@ -39,11 +39,11 @@ public class ACSDriveTrain extends Subsystem {
 	// Solenoids
 	private DoubleSolenoid shifter = new DoubleSolenoid(RobotMap.shifterPortHigh, RobotMap.shifterPortLow);
 	// Gyro
-	public Gyro gyro;
+	public AnalogGyro gyro;
 
 	public ACSDriveTrain() {
 		super("Drivebase");
-		gyro = new Gyro(RobotMap.gyroPort);
+		gyro = new AnalogGyro(RobotMap.gyroPort);
 
 	}
 	
